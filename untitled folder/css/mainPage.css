@@ -295,6 +295,7 @@ nav ul li:nth-child(4):hover .submenu2 {
     float: left;
     min-width: 1200px;
 }
+
 /* .main-banner li:nth-of-type(2) {
     background: url(../image/banner1.jpg) center /contain;
 } */
@@ -325,50 +326,66 @@ nav ul li:nth-child(4):hover .submenu2 {
 }
 
 .menuContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    /* width: 1200px; */
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.mainFrame {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .main-top {
-    width: 1200px;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 400px;
-    position: relative;
 }
 
 .mainMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1200px;
-    /* overflow: hidden; */
-    display: flex;
+    height: 100%;
 }
+
+/* .mainMenu:last-of-type {
+    left:100%;
+} */
 
 .pop_pro {
     display: flex;
     margin-bottom: 100px;
     align-content: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
-    width: 1100px;
-    margin: 0;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .btn_forward,
 .btn_back {
+    position: absolute;
     background: none;
     border: none;
     opacity: .3;
     width: 50px;
     height: 50px;
     /* margin: 0 auto; */
+    top: 50%;
+    /* left:50%; */
+    /* transform: translateY(-50%); */
+    /* width:50px; */
+}
+
+.btn_back {
+    right: 110%;
+}
+
+.btn_forward {
+    left: 110%
 }
 
 .btn_forward:hover,
@@ -409,7 +426,7 @@ nav ul li:nth-child(4):hover .submenu2 {
     margin: 10px;
     /* overflow: hidden; */
     position: relative;
-    width: 270px;
+    width: 100%;
     height: 300px;
     transition: all .5s;
 }
