@@ -6,7 +6,6 @@ let menuContainer = document.querySelector('.menuContainer'),
     menuBackBtn = document.querySelector('.btn_back'),
     menuForwardBtn = document.querySelector('.btn_forward'),
     menu = menuDiv.querySelectorAll('.pop_pro'),
-
     menuBackBtn2 = document.querySelector('.btn_back2'),
     menuForwardBtn2 = document.querySelector('.btn_forward2'),
     menuContainer2 = document.querySelector('.menuContainer2'),

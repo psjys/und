@@ -21,7 +21,6 @@
 
 header {
     top: 0;
-    /* height: 160px; */
     min-width: 1200px;
     background-color: white;
 }
@@ -36,16 +35,37 @@ header {
 
 .space {
     min-width: 1200px;
-    height: 25px;
-    /* background-color: lightsalmon; */
-    margin: auto;
+    height: 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    background-color: rgba(255, 160, 122, 0.708);
+    transition: .1s;
+}
+
+.space a {
+    color : white;
+    text-decoration : none;
+}
+
+.space-close {
+    position: absolute;
+    border: none;
+    right : 20px;
+    transition: .1s;
+    margin-top: calc((30px - 20px)/2);
+}
+
+.space-close img {
+    width : 20px;
+    height : 20px;
+    opacity : .4;
+    cursor: pointer;
 }
 
 .login {
-    /* width: 220px; */
+    justify-content: flex-end;
     display: flex;
     gap: 15px;
     right: 0;
@@ -78,10 +98,6 @@ header {
     right: 0;
     top: 100%;
 }
-
-/* .login li:nth-of-type(3):hover .hoverbox {
-    display: block;
-} */
 
 .hoverbox a {
     color: black;
@@ -212,6 +228,12 @@ nav {
     line-height: 35px;
     background-color: white;
     border: 0.5px solid lightgray;
+    border-top: none;
+}
+
+.submenu>li:first-of-type,
+.submenu2>li:first-of-type {
+    border-top : 0.5px solid lightgray;
 }
 
 /* 메뉴 hover ---------*/
@@ -299,7 +321,7 @@ nav ul li:nth-child(4):hover .submenu2 {
     position: relative;
     overflow: hidden;
     height: 500px;
-    min-width: 1600px;
+    min-width: 1200px;
 }
 
 .main-banner .animated {
@@ -528,6 +550,10 @@ header {
     visibility: hidden;
     opacity: 0;
     /* transition: all .5s; */
+}
+.topButton img {
+    width : 50px;
+    height : 50px;
 }
 
 .btnScroll {
