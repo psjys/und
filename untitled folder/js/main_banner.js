@@ -18,6 +18,16 @@ nextBtn.addEventListener('click', function (e) {
     console.log(e.target);
     if (currentIdx < slideCount - 1) {
         moveSlide(currentIdx + 1);
+    } else {
+        moveSlide(0);
     }
 });
 
+prevBtn.addEventListener('click', function(e) {
+    console.log(e.target);
+    if (currentIdx > 0) {
+        moveSlide(currentIdx - 1);
+    } else {
+        moveSlide(slideCount - 1);
+    }
+});
