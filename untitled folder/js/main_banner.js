@@ -23,7 +23,9 @@ nextBtn.addEventListener('click', function (e) {
     }
 });
 
-prevBtn.addEventListener('click', function(e) {
+//  이미지 백그라운드
+
+prevBtn.addEventListener('click', function (e) {
     console.log(e.target);
     if (currentIdx > 0) {
         moveSlide(currentIdx - 1);
