@@ -166,7 +166,7 @@ header {
 }
 
 nav {
-    min-width: 1200px;
+    min-width: 1300px;
     line-height: 50px;
     display: flex;
     justify-content: space-around;
@@ -220,11 +220,6 @@ nav {
     text-decoration: underline;
 }
 
-/* .menu:hover .submenu
-.menu:hover .submenu2 {
-    transition-duration: all 0.5s;
-}  */
-
 .menu>li:hover>a {
     color: lightsalmon;
 }
@@ -238,7 +233,6 @@ nav ul li:nth-child(4):hover .submenu2 {
 .bannerContainer {
     position: relative;
     width: 100%;
-    /* display: flex; */
 }
 
 .btn_left,
@@ -283,9 +277,7 @@ nav ul li:nth-child(4):hover .submenu2 {
     width: 400%;
     /* min-width: 4800px; */
     position: absolute;
-    transition: left 0.5s ease-out;
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
+    transition: 0.5s ease-out;
     left: 0;
 }
 
@@ -293,14 +285,9 @@ nav ul li:nth-child(4):hover .submenu2 {
     transition: all .5s;
     width: 25%;
     float: left;
-    min-width: 1200px;
 }
 
-/* .main-banner li:nth-of-type(2) {
-    background: url(../image/banner1.jpg) center /contain;
-} */
 .main-banner img {
-    /* display: block; */
     object-fit: cover;
     background-size: 100%;
     height: 500px;
@@ -312,6 +299,7 @@ nav ul li:nth-child(4):hover .submenu2 {
     position: relative;
     overflow: hidden;
     height: 500px;
+    min-width: 1600px;
 }
 
 .main-banner .animated {
@@ -325,29 +313,42 @@ nav ul li:nth-child(4):hover .submenu2 {
     margin: 0 auto;
 }
 
-.menuContainer {
+.menuContainer,
+.menuContainer2,
+.menuContainer3,
+.menuContainer4 {
     position: relative;
     width: 1200px;
     height: 400px;
     margin: 0 auto;
 }
 
-.mainFrame {
+.mainFrame,
+.mainFrame2,
+.mainFrame3,
+.mainFrame4 {
     overflow: hidden;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.main-top {
-    width: 200%;
+.main-top,
+.main-top2,
+.main-top3,
+.main-top4 {
+    width: 400%;
     height: 100%;
     position: absolute;
     left: 0;
     display: flex;
+    transition: all .5s;
 }
 
-.mainMenu {
+.mainMenu,
+.mainMenu2,
+.mainMenu3,
+.mainMenu4 {
     height: 100%;
 }
 
@@ -359,48 +360,65 @@ nav ul li:nth-child(4):hover .submenu2 {
     display: flex;
     margin-bottom: 100px;
     align-content: center;
-    /* justify-content: center; */
     text-align: center;
     width: 50%;
     margin: 0 auto;
 }
 
 .btn_forward,
-.btn_back {
+.btn_back,
+.btn_forward2,
+.btn_back2,
+.btn_forward3,
+.btn_back3,
+.btn_forward4,
+.btn_back4 {
     position: absolute;
     background: none;
     border: none;
     opacity: .3;
     width: 50px;
     height: 50px;
-    /* margin: 0 auto; */
-    top: 50%;
-    /* left:50%; */
-    /* transform: translateY(-50%); */
-    /* width:50px; */
+    top: 33%;
 }
 
-.btn_back {
-    right: 110%;
+.btn_back,
+.btn_back2,
+.btn_back3,
+.btn_back4 {
+    right: 100%;
 }
 
-.btn_forward {
-    left: 110%
+.btn_forward,
+.btn_forward2,
+.btn_forward3,
+.btn_forward4 {
+    left: 100%
 }
 
 .btn_forward:hover,
-.btn_back:hover {
+.btn_back:hover,
+.btn_forward2:hover,
+.btn_back2:hover,
+.btn_forward3:hover,
+.btn_back3:hover,
+.btn_forward4:hover,
+.btn_back4:hover {
     opacity: 1;
     transition: all .5s;
 }
 
 .btn_forward img,
-.btn_back img {
+.btn_back img,
+.btn_forward2 img,
+.btn_back2 img,
+.btn_forward3 img,
+.btn_back3 img,
+.btn_forward4 img,
+.btn_back4 img {
     width: 50px;
     height: 50px;
 }
-
-
 
 .pop {
     font-size: 1.5em;
@@ -509,7 +527,7 @@ header {
     object-fit: cover;
     visibility: hidden;
     opacity: 0;
-    transition: all .5s;
+    /* transition: all .5s; */
 }
 
 .btnScroll {
