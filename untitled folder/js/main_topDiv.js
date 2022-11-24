@@ -5,5 +5,6 @@ let space = document.querySelector('.space'),
 
 spaceBtn.addEventListener('click', function () {
     space.style.visibility = 'hidden';
+    spaceBtn.style.visibility = 'hidden';
     space.style.height = 0 + 'px';
 });

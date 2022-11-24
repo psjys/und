@@ -41,27 +41,27 @@ header {
     align-items: center;
     position: relative;
     background-color: rgba(255, 160, 122, 0.708);
-    transition: .1s;
+    transition: .4s;
 }
 
 .space a {
-    color : white;
-    text-decoration : none;
+    color: white;
+    text-decoration: none;
 }
 
 .space-close {
     position: absolute;
     border: none;
-    right : 20px;
-    transition: .1s;
+    right: 20px;
     margin-top: calc((30px - 20px)/2);
 }
 
 .space-close img {
-    width : 20px;
-    height : 20px;
-    opacity : .4;
+    width: 20px;
+    height: 20px;
+    opacity: .4;
     cursor: pointer;
+    transition: .1s;
 }
 
 .login {
@@ -233,7 +233,7 @@ nav {
 
 .submenu>li:first-of-type,
 .submenu2>li:first-of-type {
-    border-top : 0.5px solid lightgray;
+    border-top: 0.5px solid lightgray;
 }
 
 /* 메뉴 hover ---------*/
@@ -453,6 +453,9 @@ nav ul li:nth-child(4):hover .submenu2 {
     text-decoration: none;
     color: black;
 }
+.pop h2 {
+    padding-top : 50px;
+}
 
 .game {
     border: 1px solid;
@@ -551,9 +554,10 @@ header {
     opacity: 0;
     /* transition: all .5s; */
 }
+
 .topButton img {
-    width : 50px;
-    height : 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .btnScroll {
